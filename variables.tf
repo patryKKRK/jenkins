@@ -3,7 +3,7 @@ variable "cidr_vpc" {
 }
 
 variable "public_cidr" {
-  default = "172.121.1.0/24"
+  default = "172.120.1.0/24"
 }
 
 variable "public_key" {
@@ -15,5 +15,5 @@ variable "instance_type" {
 }
 
 variable "ami" {
-  default = "ami-09558250a3419e7d0"
+  default = "ami-0bd39c806c2335b95"
 }
