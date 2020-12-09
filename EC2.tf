@@ -9,5 +9,5 @@ resource "aws_instance" "jenkins" {
   subnet_id       = aws_subnet.public1.id
   key_name        = aws_key_pair.deployer.key_name
   user_data     = file("./scripts/install_jenkins.sh")
-  security_groups = [aws_security_group.ssh.id, aws_security_group.http8080.id]
+  security_groups = [aws_security_group.ssh.id, aws_security_group.http8080.id, aws_security_group.egress_all_allow.id]
 }
